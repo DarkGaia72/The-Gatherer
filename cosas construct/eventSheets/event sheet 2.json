@@ -1,0 +1,66 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-load-complete",
+					"objectClass": "System",
+					"sid": 617448104057701
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 583865330625584,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 182297659464280
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 587158552895798
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 319865953483963,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 495438379685103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button3",
+					"sid": 391504904655452
+				}
+			],
+			"actions": [
+				{
+					"id": "close",
+					"objectClass": "Browser",
+					"sid": 753761429233761
+				}
+			],
+			"sid": 623100959086097
+		}
+	],
+	"sid": 383426374264891
+}

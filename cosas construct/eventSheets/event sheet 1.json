@@ -1,0 +1,210 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-load-complete",
+					"objectClass": "System",
+					"sid": 841406803002744
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 712663310464176,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 720830444443856
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "gatherer",
+					"sid": 375851757606072,
+					"behaviorType": "Platform",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "gatherer",
+					"sid": 332413994970006,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 888486889240529
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "gatherer",
+					"sid": 209619728603637,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "gatherer",
+					"sid": 177683259671144,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 597884317042464
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 772143562890573,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "gatherer",
+					"sid": 883606687825026,
+					"parameters": {
+						"animation": "\"attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 445149402493969
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 372555996153344,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "gatherer",
+					"sid": 547693903619211,
+					"parameters": {
+						"animation": "\"run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 851439284170750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 364536204221094,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "gatherer",
+					"sid": 934344060746060,
+					"parameters": {
+						"animation": "\"run2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 171247397702232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite7",
+					"sid": 841835547384759,
+					"parameters": {
+						"object": "gatherer"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 224146104913656,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite7",
+					"sid": 185768733486444
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 731015279121536,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				}
+			],
+			"sid": 895446731303782
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Sprite7",
+					"sid": 619917193463394
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 851579791864833,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 960845628816439
+		}
+	],
+	"sid": 155139451316894
+}
